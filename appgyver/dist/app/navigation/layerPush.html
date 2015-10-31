@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  window.addEventListener('WebComponentsReady', function() {
+    supersonic.app.splashscreen.hide();
+  });
+  </script>
+  <!-- Cloud resource definition file for Supersonic Data -->
+  <script src="/cloud-resources.js"></script>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>layerPush</title>
+
+  <link rel="stylesheet" href="/components/supersonic/css/supersonic.css" />
+  <link rel="stylesheet" href="/app/common/stylesheets/application.css" />
+  <link rel="import" href="/components/supersonic/components/import.html">
+
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+  <script src="/components/angular/angular.js"></script>
+  <script src="/components/supersonic/supersonic.js"></script>
+  <script src="/components/webcomponentsjs/webcomponents.js"></script>
+
+  
+  <script src="/app/common.js"></script>
+  
+  <script src="/app/navigation.js"></script>
+  
+</head>
+<body ng-app="navigation">
+
+<super-navbar>
+  <super-navbar-title>
+    another webview
+  </super-navbar-title>
+</super-navbar>
+
+<div class="padding extra-padding-left">
+
+  <br>
+  <h3>Pow!</h3>
+  <p>You just navigated to another webview using the native layer. To navigate back, use one of the following:</p>
+
+  <ol>
+    <li>
+      <b>1. Tap</b> on the automatically added, native, back button.
+      <br><br>
+    </li>
+    <li>
+      <b>2. Swipe</b> from the left edge of the view. (iOS only!)
+      <br><br>
+    </li>
+    <li>
+      <b>3. Tap</b> on an in-view HTML5 component with navigate-back action attached.
+    </li>
+  </ol>
+
+  <super-navigate-back>
+    <button class="button button-positive button-block navigation__layerPush__button">
+      <div class="navigation__layerPush__circle circle-3">3</div>
+      Navigate back!
+    </button>
+  </super-navigate-back>
+
+  <br><br>
+
+  <div class="navigation__layerPush__circle circle-1">1</div>
+  <div class="navigation__layerPush__circle circle-2">2</div>
+
+</div>
+
+</body>
+</html>

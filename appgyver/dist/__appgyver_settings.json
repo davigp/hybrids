@@ -1,0 +1,65 @@
+{
+  "preloads": [
+    {
+      "id": "navigation-layerPush",
+      "location": "http://localhost/app/navigation/layerPush.html"
+    },
+    {
+      "id": "navigation-modalWindow",
+      "location": "http://localhost/app/navigation/modalWindow.html"
+    },
+    {
+      "id": "navigation-transitions",
+      "location": "http://localhost/app/navigation/transitions.html"
+    },
+    {
+      "id": "sensors-geolocation",
+      "location": "http://localhost/app/sensors/geolocation.html"
+    },
+    {
+      "id": "sensors-compass",
+      "location": "http://localhost/app/sensors/compass.html"
+    },
+    {
+      "id": "sensors-accelerometer",
+      "location": "http://localhost/app/sensors/accelerometer.html"
+    },
+    {
+      "id": "status-network",
+      "location": "http://localhost/app/status/network.html"
+    }
+  ],
+  "drawers": {
+    "left": {
+      "id": "drawer-content",
+      "location": "http://localhost/app/drawer/content.html",
+      "showOnAppLoad": false
+    },
+    "options": {
+      "animation": "swingingDoor"
+    }
+  },
+  "tabs": [
+    {
+      "position": 0,
+      "id": "index",
+      "title": "Index",
+      "target_url": "http://localhost/app/kitchensink/index.html"
+    },
+    {
+      "position": 1,
+      "id": "settings",
+      "title": "Settings",
+      "target_url": "http://localhost/app/kitchensink/settings.html"
+    },
+    {
+      "position": 2,
+      "id": "internet",
+      "title": "Internet",
+      "target_url": "http://google.com"
+    }
+  ],
+  "configuration": {
+    "extra_response_headers": {}
+  }
+}

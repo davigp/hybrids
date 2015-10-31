@@ -1,0 +1,190 @@
+.supersonic-navbar-mock {
+  background-color: #00B5FF !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.index__welcome-message {
+  background-color: #30384a;
+  color: white;
+  padding: 15px;
+}
+
+/*********************************
+ * Drawer menu
+ ********************************/
+
+.drawer__background {
+  background: #f3f3f3;
+}
+
+/*********************************
+ * Loading message
+ ********************************/
+
+.loading-message {
+  text-align: center;
+  line-height: 26px;
+  height: 26px;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.loading-message img {
+  height: 26px;
+  vertical-align: top;
+}
+
+/*********************************
+ * Navigation / LayerPush
+ ********************************/
+
+.navigation__layerPush__circle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 20px;
+  border: 2px solid black;
+  font-weight: bold;
+  color: black;
+}
+
+.navigation__layerPush__circle.circle-1 {
+  top: 10px;
+  left: 10px;
+}
+
+.navigation__layerPush__circle.circle-2 {
+  top: 50%;
+  left: 10px;
+  margin-top: -12px;
+}
+
+.navigation__layerPush__circle.circle-3 {
+  top: 10px;
+  left: -50px;
+}
+
+.extra-padding-left {
+  padding-left: 60px;
+}
+
+.navigation__layerPush__button {
+  position: relative;
+}
+
+/*********************************
+ * Sensors / Geolocation
+ ********************************/
+
+.google-maps-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  background-color: #f4f4f4;
+}
+
+.google-maps-container > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.geolocation-table tr td:first-child {
+  padding-right: 10px;
+  text-align: right;
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.geolocation-table tr td:last-child {
+  padding-left: 10px;
+}
+
+/*********************************
+ * Sensors / Compass
+ ********************************/
+
+.compass-container {
+  position: relative;
+  width: 80%;
+  padding: 5px;
+  margin: 0px auto;
+}
+
+.compass-container > .compass-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.compass-container > .compass-frame > .layer1,
+.compass-container > .compass-frame > .layer2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.compass-container > .compass-frame > .layer1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(0deg) translateZ(0);
+  transform: rotate(0deg) translateZ(0);
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background: #e5f7ff;
+}
+
+.compass-container > .compass-frame > .layer1 > .reddot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  top: 0px;
+  margin-left: -5px;
+  margin-top: -5px;
+  background: #fa5252;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.compass-container > .compass-frame > .layer2 > .compass-reading {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  margin-top: -15px;
+  top: 50%;
+  left: 0;
+  line-height: 30px;
+  font-size: 26px;
+  vertical-align: center;
+  text-align: center;
+}
+
+/*********************************
+ * Sensors / Accelerometer
+ ********************************/
+
+.accelerometer-visualization-container {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/*********************************
+ * Status / Network
+ ********************************/
+
+.status__network__online {
+  color: #14bda6;
+}
+
+.status__network__offline {
+  color: #fa5252;
+}

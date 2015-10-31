@@ -1,0 +1,31 @@
+<div ng-controller="CompassController">
+
+  <super-navbar>
+    <super-navbar-title>
+      compass
+    </super-navbar-title>
+  </super-navbar>
+
+  <div class="padding">
+
+    <br><br>
+
+    <div class="compass-container">
+      <div class="compass-frame">
+        <div class="layer1" style="-webkit-transform: rotate({{(360-reading)}}deg) translateZ(0); transform: rotate({{(360-reading)}}deg) translateZ(0);">
+          <div class="reddot"></div>
+        </div>
+        <div class="layer2">
+          <div class="compass-reading">{{reading | round}}</div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+      <b>Currently {{(((360-accuracy)/360) * 100) | round}}% accurate</b>
+    </div>
+
+  </div>
+
+</div>

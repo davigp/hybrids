@@ -1,0 +1,21 @@
+<div ng-controller="NetworkController">
+
+  <super-navbar>
+    <super-navbar-title>
+      network
+    </super-navbar-title>
+  </super-navbar>
+
+  <div class="padding text-center">
+
+    <br>
+    <b>You are now:</b>
+
+    <br>
+    <h3 ng-class="{'status__network__online': networkStatus=='online', 'status__network__offline': networkStatus=='offline'}">
+      {{networkStatus}}
+    </h3>
+
+  </div>
+
+</div>
